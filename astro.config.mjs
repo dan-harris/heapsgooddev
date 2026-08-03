@@ -9,7 +9,11 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
   },
-
   adapter: cloudflare(),
 });

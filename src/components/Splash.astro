@@ -3,13 +3,52 @@ import { Image } from "astro:assets";
 import crtMascot from "../assets/crt-mascot.webp";
 ---
 
-<section class="flex min-h-screen items-center justify-center bg-lavender p-4">
-  <div class="flex flex-col items-center justify-center">
+<section
+  class="flex flex-col gap-9 min-h-screen items-center justify-center bg-lavender p-6"
+>
+  <h1 class="opacity-0 absolute size-0">Heaps Good Dev</h1>
+  <div
+    class="relative flex flex-col gap-4 items-center justify-center w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl"
+  >
+    <svg
+      viewBox="0 0 731 800"
+      class="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
+    >
+      <path
+        id="mascot-text-arc"
+        d="M -60,325.5 A 425.5,425.5 0 0,1 791,325.5"
+        fill="none"></path>
+      <text
+        class="fill-black font-bold tracking-wider font-sans"
+        style="font-family: var(--font-sans), cursive, sans-serif; font-weight: 700; font-size: 120px;"
+      >
+        <textPath
+          href="#mascot-text-arc"
+          startOffset="50%"
+          text-anchor="middle"
+        >
+          HEAPS GOOD DEV
+        </textPath>
+      </text>
+    </svg>
+
     <Image
       src={crtMascot}
       alt="Heaps Good Dev Mascot"
-      class="h-auto max-w-xs sm:max-w-md md:max-w-lg w-full"
+      class="h-auto w-full -translate-x-5"
       loading="eager"
     />
+
+    <span class="text-5xl text-center">est. 2015</span>
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <p class="text-4xl font-serif font-semibold text-center">
+      Where Adelaide Dev's Hangout.
+    </p>
+    <a
+      href="https://join.slack.com/t/heapsgooddev/shared_invite/enQtNjkxODI4NDc0NzA4LTQ1NzE4ZTkwNjAyODAzYzA5NDBlNDc5OTQ4ODc2ZWJiNzU0MzAyODg0ZTJjMTA0YWM2ZDEzZjM4NjIyMDY3OGY"
+      target="_blank"
+      class="text-4xl font-serif font-semibold text-center">Join us on slack</a
+    >
   </div>
 </section>

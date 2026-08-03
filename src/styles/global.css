@@ -1,9 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Fredoka:wght@300..700&display=swap");
 @import "tailwindcss";
 
 :root {
   --hgd-color-lavender: #e1d9fc;
+  --hgd-color-light-blue: #b5d3ef;
+  --hgd-color-magenta: #e83f6f;
+  --hgd-color-bone: #eee2cf;
+  --hgd-color-dark-blue: #4c6085;
+  --hgd-font-sans: "DynaPuff", cursive, sans-serif;
+  --hgd-font-serif: "Fredoka", serif;
 }
 
 @theme {
   --color-lavender: var(--hgd-color-lavender);
+  --color-light-blue: var(--hgd-color-light-blue);
+  --color-magenta: var(--hgd-color-magenta);
+  --color-bone: var(--hgd-color-bone);
+  --color-dark-blue: var(--hgd-color-dark-blue);
+  --font-sans: var(--hgd-font-sans);
+  --font-serif: var(--hgd-font-serif);
+}
+
+@layer base {
+  a {
+    @apply underline underline-offset-8;
+    color: var(--hgd-color-magenta);
+  }
+
+  a:hover {
+    color: var(--hgd-color-dark-blue);
+  }
 }
