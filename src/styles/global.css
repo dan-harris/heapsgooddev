@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+  --hgd-color-lavender: #e1d9fc;
+}
+
+@theme {
+  --color-lavender: var(--hgd-color-lavender);
+}

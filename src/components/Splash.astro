@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import crtMascot from "../assets/crt-mascot.webp";
+---
+
+<section class="flex min-h-screen items-center justify-center bg-lavender p-4">
+  <div class="flex flex-col items-center justify-center">
+    <Image
+      src={crtMascot}
+      alt="Heaps Good Dev Mascot"
+      class="h-auto max-w-xs sm:max-w-md md:max-w-lg w-full"
+      loading="eager"
+    />
+  </div>
+</section>
