@@ -8,11 +8,42 @@ import crtMascot from "../assets/crt-mascot.webp";
 >
   <h1 class="opacity-0 absolute size-0">Heaps Good Dev</h1>
   <div
-    class="relative flex flex-col gap-4 items-center justify-center w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl"
+    class="relative flex flex-col gap-4 items-center justify-center w-full max-w-[260px] sm:max-w-md md:max-w-lg lg:max-w-xl"
   >
     <svg
+      viewBox="0 0 260 285"
+      class="sm:hidden absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
+    >
+      <path
+        id="mascot-text-arc-mobile"
+        d="M -15,23 A 145,145 0 0,1 275,23"
+        fill="none"></path>
+      <text
+        class="fill-black font-bold tracking-tighter font-sans"
+        style="font-family: var(--font-sans), cursive, sans-serif; font-weight: 700; font-size: 60px; letter-spacing: -2px;"
+      >
+        <textPath
+          href="#mascot-text-arc-mobile"
+          startOffset="50%"
+          text-anchor="middle"
+        >
+          HEAPS GOOD
+        </textPath>
+      </text>
+      <!-- <text
+        x="130"
+        y="-25"
+        text-anchor="middle"
+        class="fill-black font-bold tracking-wider font-sans"
+        style="font-family: var(--font-sans), cursive, sans-serif; font-weight: 700; font-size: 60px;"
+      >
+        DEV
+      </text> -->
+    </svg>
+
+    <svg
       viewBox="0 0 731 800"
-      class="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
+      class="hidden sm:block absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
     >
       <path
         id="mascot-text-arc"
@@ -35,20 +66,21 @@ import crtMascot from "../assets/crt-mascot.webp";
     <Image
       src={crtMascot}
       alt="Heaps Good Dev Mascot"
-      class="h-auto w-full -translate-x-5"
+      class="h-auto w-full translate-x-0 sm:-translate-x-5"
       loading="eager"
     />
 
-    <span class="text-5xl text-center">est. 2015</span>
+    <span class="font-sans font-bold text-6xl lg:hidden">DEV</span>
+    <span class="text-4xl text-center">est. 2015</span>
   </div>
   <div class="flex flex-col items-center gap-2">
-    <p class="text-4xl font-serif font-semibold text-center">
+    <p class="text-3xl font-serif font-semibold text-center">
       Where Adelaide Dev's Hangout.
     </p>
     <a
       href="https://join.slack.com/t/heapsgooddev/shared_invite/enQtNjkxODI4NDc0NzA4LTQ1NzE4ZTkwNjAyODAzYzA5NDBlNDc5OTQ4ODc2ZWJiNzU0MzAyODg0ZTJjMTA0YWM2ZDEzZjM4NjIyMDY3OGY"
       target="_blank"
-      class="text-4xl font-serif font-semibold text-center">Join us on slack</a
+      class="text-3xl font-serif font-semibold text-center">Join us on slack</a
     >
   </div>
 </section>
